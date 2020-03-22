@@ -1,5 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,700,900&display=swap');
+
 .App {
   text-align: center;
+}
+
+.body{
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  justify-content: center;
+  align-items: center;
+  background-color: #0C0D17;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Raleway', sans-serif;
+}
+
+.projects{
+  max-width: 992px;
+  width: 100%;
+  margin: 0px auto;
+  padding: 40px 15px;
+
+}
+
+.caption{
+  font-size: 3rem;
+  margin-bottom: 60px;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  font-weight: 400;
+  opacity: 0.8;
+  margin-top: -80px;
+}
+
+#git{
+  color: #c65cf7;
+  text-decoration: none;
+}
+
+.cover{
+  background: rgba(0, 7, 12, 0.0);
+  width: 100%;
+  height: 260px;
+  border-radius: 5px;
+}
+
+#pacman{
+  background-image: url(../src/images/pac.JPG);
+  background-size: cover;
+}
+
+#composter{
+  background-image: url(../src/images/compost.JPG);
+  background-size: cover;
+}
+
+#rapter{
+  background-image: url(../src/images/rap.jpeg);
+  background-size: cover;
+}
+
+#pong{
+  background-image: url(../src/images/pongg.JPG);
+  background-size: cover;
+}
+
+.columns{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  gap: 40px 25px;
+}
+
+.project{
+  height: 260px;
+  border-radius: 5px;
+}
+
+#videoScraper{
+  background-image: url(../src/images/videoScraper.jpeg);
+  background-size: cover;
+}
+
+#res{
+  color: #20e3b2;
+  text-decoration: none;
+}
+
+.name{
+  font-size: 22px;
+  font-weight: 400;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: left;
+}
+
+#qwerty{
+  background-image: url(../src/images/qwerty.png);
+  background-size: cover;
+}
+
+.first{
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  text-transform: lowercase;
+  line-height: 1;
+  text-align: left;
+  font-size: 6.4rem;
+  height: 150px;
+  background: linear-gradient(to right, #c65cf7 0%,#29ffc6 100%);
+  -webkit-background-clip: text;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 .App-logo {
@@ -28,11 +142,30 @@
   color: #61dafb;
 }
 
+@media only screen and (max-width: 1024px){
+  .first{
+    height: 300px;
+  }
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes float_up {
+  0% { 
+    transform: translateY(20px);
+    opacity: 0.0;
+    visibility: visible;
+} 
+  100% {
+    transform: translateY(0px);
+    opacity: 1.0;
+    visibility: visible;
   }
 }
