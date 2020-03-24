@@ -33,13 +33,10 @@ class Home extends React.Component{
       <header className="body">
         <div className="projects">
           <div className="links">
-            <div class="container">
-              <div class="background-hover">
-                <a className="li" id="github" href="https://github.com/ZumbaMaster313">email</a>
-                <a className="li" id="email" href="mailto: isebasus@gmail.com">games</a>
-                <a className="li" id="games" href="https://github.com/ZumbaMaster313">aboutme</a>
-              </div>
-            </div>
+              <a id="palm">🥤</a>
+              <a className="li" id="github" href="https://github.com/ZumbaMaster313">email</a>
+              <a className="li" id="email" href="mailto: isebasus@gmail.com">games</a>
+              <a className="li" id="games" href="https://github.com/ZumbaMaster313">aboutme</a>
           </div>
           <h1 className="first">hey, i'm sebastian.</h1>
           <h2 className="caption">These are the projects I've developed. Check out my <a id="git" href="https://github.com/ZumbaMaster313/">github</a> &amp; <a id="res">resume</a> for more.</h2>

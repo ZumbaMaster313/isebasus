@@ -14,7 +14,10 @@
   overflow-x: hidden;
   justify-content: center;
   align-items: center;
+  /*
   background-color: #0C0D17;
+  */
+  background-color:#0C0D17;
   -webkit-font-smoothing: antialiased;
   font-family: 'Raleway', sans-serif;
 }
@@ -34,7 +37,7 @@
   text-align: left;
   font-weight: 400;
   opacity: 0.8;
-  margin-top: -80px;
+  margin-top: -80px;  
 }
 
 #git{
@@ -54,13 +57,12 @@
 }
 
 .li{
-  color: black;
   cursor: pointer;
   font-weight: normal;
   text-decoration: none;
   font-size: 22px;
   font-weight: 400;
-  color: rgba(255, 255, 255,);
+  color: rgba(255, 255, 255);
   opacity: 0.9;
   -webkit-transition: opacity .4s linear;
   transition: opacity .4s linear;
@@ -83,7 +85,6 @@
 
 #github{
   padding-right: 10px;
-  color: rgba(255, 255, 255, 0.8);
   border-right: 1px solid #78aede;
 }
 
@@ -97,14 +98,12 @@
 
 #email{
   padding-left: 10px;
-  color: rgba(255, 255, 255, 0.8);
   border-right: 1px solid #78aede;
   padding-right: 10px;
 }
 
 #games{
   padding-left: 10px;
-  color: rgba(255, 255, 255, 0.8);
 }
 
 #devider{
@@ -176,7 +175,7 @@
 }
 
 #res{
-  color: #20e3b2;
+  color: #dd414c;
   text-decoration: none;
 }
 
@@ -185,7 +184,7 @@
   font-weight: 400;
   margin-top: 10px;
   color: rgba(255, 255, 255);
-  opacity: 0.8;
+  opacity: 0.9;
   text-align: left;
 }
 
@@ -201,7 +200,7 @@
   text-align: left;
   font-size: 6.4rem;
   height: 150px;
-  background: linear-gradient(to right, #c65cf7 0%,#29ffc6 100%);
+  background: linear-gradient(to right, #c65cf7 0%,#dd414c 100%);
   -webkit-background-clip: text;
   margin-block-start: 0.67em;
   margin-block-end: 0.67em;
