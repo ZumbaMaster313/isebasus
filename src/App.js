@@ -34,9 +34,8 @@ class Home extends React.Component{
         <div className="projects">
           <div className="links">
               <a id="palm">🥤</a>
-              <a className="li" id="github" href="https://github.com/ZumbaMaster313">email</a>
-              <a className="li" id="email" href="mailto: isebasus@gmail.com">games</a>
-              <a className="li" id="games" href="https://github.com/ZumbaMaster313">aboutme</a>
+              <a className="li" id="github" href="mailto: isebasus@gmail.com">email</a>
+              <a className="li" id="games" href="https://github.com/ZumbaMaster313">about me</a>
           </div>
           <h1 className="first">hey, i'm sebastian.</h1>
           <h2 className="caption">These are the projects I've developed. Check out my <a id="git" href="https://github.com/ZumbaMaster313/">github</a> &amp; <a id="res">resume</a> for more.</h2>
