@@ -11,10 +11,10 @@ const styles = {
 };
 
 
-const projectContainer = ({projectId, name, method, xRotate, yRotate}) =>  {
+const projectContainer = ({projectId, name, method, xRotate, yRotate, path}) =>  {
 
     return(
-        <div style={{color: '-webkit-link', cursor: 'pointer'}}>
+        <div style={{color: '-webkit-link', cursor: 'pointer'}} onClick={path}>
             <div className="parent">
                 <div className="project" id={projectId}>
                     <div className="cover"></div>
