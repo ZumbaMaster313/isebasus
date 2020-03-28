@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
 import Project from './components/projects.jsx';
 import Description from './components/description.jsx';
 import { createBrowserHistory } from 'history';
+import qwerty from '../src/images/qwerty.png'
 import logo from './logo.svg';
 import './App.css';
 
@@ -50,14 +51,17 @@ class Home extends React.Component{
   render(){
     return (
       <header className="body">
+        <nav class="nav">
+          <a id="link">about</a>
+        </nav>
         <div className="projects">
-          <h1 className="first">hey, i'm sebastian.</h1>
+          <h1 className="first"><a id="text">hi, i'm sebastian</a> 👋</h1>
           <h2 className="caption">These are the projects I've developed. Check out my <a id="git" href="https://github.com/ZumbaMaster313/">github</a> &amp; <a id="res">resume</a> for more.</h2>
           <div className="columns">
-            <Project projectId="qwerty" path={this.qwerty} name="Qwerty"></Project>
+            <Project projectId="qwerty" path={this.qwerty} name="Qwerty" imagePath={qwerty}></Project>
+            <Project projectId="composter" path={this.composter} name="Composter"></Project>
             <Project projectId="videoScraper" path={this.videoScraper} name="Video Scraper"></Project>
             <Project projectId="rapter" path={this.rapter} name="Rapter"></Project>
-            <Project projectId="composter" path={this.composter} name="Composter"></Project>
           </div>
         </div>
       </header>
