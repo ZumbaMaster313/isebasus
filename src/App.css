@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900&display=swap');
 
 *, ::before, ::after {
   box-sizing: inherit;
@@ -58,6 +60,12 @@ div{
   background-size: cover;
 }
 
+#pCaption{
+  margin-top: -20px;
+  text-align:center;
+  color: rgba(255, 255, 255, 0.9);
+}
+
 .caption{
   font-size: 3rem;
   margin-bottom: 60px;
@@ -65,17 +73,17 @@ div{
   text-align: left;
   font-weight: 400;
   opacity: 0.8;
-  margin-top: -80px;  
+  margin-top: -90px;  
 }
 
 #git{
-  color: #c65cf7;
+  color: #e07feb;
   text-decoration: none;
   transition: 0.25s ease;
 }
 
 #git:hover{
-  color: #db8fff;
+  color: #efa8f7;
 }
 
 .links{
@@ -95,14 +103,12 @@ div{
   text-decoration: none;
   font-size: 22px;
   font-weight: 400;
-  color: rgba(255, 255, 255);
-  opacity: 0.9;
-  -webkit-transition: opacity .4s linear;
-  transition: opacity .4s linear;
+  color: rgba(255, 255, 255, 0.8);
+  transition: 0.25s ease;
 }
 
 .li:hover{
-  opacity: 1;
+  color: rgba(255, 255, 255, 1);
 }
 
 .background-hover{
@@ -184,6 +190,10 @@ div{
   gap: 40px 25px;
 }
 
+video{
+  border-radius: 3px;
+}
+
 .project{
   position: relative;
   overflow: hidden;
@@ -254,13 +264,13 @@ div{
 
 #text{
   -webkit-text-fill-color: transparent;
-  background: linear-gradient(to right, #c65cf7 0%,#dd414c 100%);
+  text-transform: lowercase;
+  background: linear-gradient(to right, #e07feb 0%,#dd414c 100%);
    -webkit-background-clip: text;
 }
 
 .first{
   font-weight: 900;
-  text-transform: lowercase;
   line-height: 1;
   text-align: left;
   font-size: 6.4rem;
@@ -270,6 +280,14 @@ div{
   margin-block-end: 0.67em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+}
+
+#title{
+  margin-top: 60px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 4.5rem;
+  margin-bottom: -10px;
 }
 
 .App-logo {
