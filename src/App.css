@@ -6,27 +6,12 @@
   box-sizing: inherit;
 }
 
-::-webkit-scrollbar {
-  width: 5px;
-}
-
-::-webkit-scrollbar-track {
-  background: #0C0D17; 
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 1em;
-  transition: .3s
-}
-
 
 ::selection {
-  background: #ffb7b7; /* WebKit/Blink Browsers */
+  background: #faf6b1; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: #ffb7b7; /* Gecko Browsers */
+  background: #faf6b1; /* Gecko Browsers */
 }
 
 html{
@@ -48,9 +33,10 @@ div{
 .body{
   width: 100%;
   height: 100vh;
-  background-color:#0C0D17;
-  -webkit-font-smoothing: antialiased;
+  background-color:#171717;
   font-family: 'Raleway', sans-serif;
+  -webkit-font-smoothing: subpixel-antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 .projects{
@@ -61,15 +47,16 @@ div{
 }
 
 #pCaption{
-  margin-top: -20px;
+  margin-top: -85px;
   text-align:center;
+  margin-bottom: 10px;
   color: rgba(255, 255, 255, 0.9);
 }
 
 .caption{
   font-size: 3rem;
   margin-bottom: 60px;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.85);
   text-align: left;
   font-weight: 400;
   opacity: 0.8;
@@ -77,13 +64,13 @@ div{
 }
 
 #git{
-  color: #e07feb;
-  text-decoration: none;
+  color: #FFF640;
+  text-decoration: underline;
   transition: 0.25s ease;
 }
 
 #git:hover{
-  color: #efa8f7;
+  color: rgb(209, 197, 173, 1);
 }
 
 .links{
@@ -125,6 +112,16 @@ div{
 #github{
   padding-right: 10px;
   border-right: 1px solid #78aede;
+}
+
+.github{
+  float:right;
+  user-select: none;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-top: -24px;
 }
 
 .container{
@@ -201,7 +198,7 @@ video{
 }
 
 .parent{
-  border-radius: 4px;
+  border-radius: 3px;
   background-size: cover;
   background-repeat: none;
 }
@@ -239,23 +236,29 @@ video{
 }
 
 #res{
-  color: #dd414c;
-  text-decoration: none;
+  color: #FF845B;
+  text-decoration: underline;
   transition: 0.25s ease;
   cursor: pointer;
 }
 
 #res:hover{
-  color: #ff616b;
+  color: rgb(209, 197, 173, 1);
+}
+
+img{
+  float: right;
 }
 
 .name{
-  font-size: 20px;
+  text-align: left;
+  display: block;
+  font-size: 22px;
   font-weight: 400;
   margin-top: 10px;
-  text-align: left;
-  color: rgba(255, 255, 255, 0.8);
-  backface-visibility: hidden;
+  color: rgba(255, 255, 255, 0.9);
+  position: relative;
+  border-radius: 4px;
 }
 
 #qwerty{
@@ -265,8 +268,53 @@ video{
 #text{
   -webkit-text-fill-color: transparent;
   text-transform: lowercase;
-  background: linear-gradient(to right, #e07feb 0%,#dd414c 100%);
+  background: #ffffff;
    -webkit-background-clip: text;
+}
+
+a{
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button{
+  display: block;
+  background-image: linear-gradient(135deg, #ebe667 0%, #a34b4b 100%);
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+  width: 170px;
+  margin: 0px auto 50px;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 4px;
+  line-height: 1.4 ;
+  transition: all 0.15s ease 0s;
+  cursor: pointer;
+}
+
+.button:hover{
+    -webkit-transform: translateY(-1.5px);
+    -ms-transform: translateY(-1.5px);
+    transform: translateY(-1.5px);
+}
+
+#descr{
+  color: #FFffff;
+  font-size: 2rem;
+  text-align: left;
+  font-weight: 500;
+  margin-bottom: -10px;
+  margin-top: 40px;
+}
+
+p{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 .first{
@@ -287,7 +335,7 @@ video{
   color: #ffffff;
   text-align: center;
   font-size: 4.5rem;
-  margin-bottom: -10px;
+  margin-bottom: -60px;
 }
 
 .App-logo {
@@ -342,6 +390,10 @@ video{
 @media only screen and (max-width: 577px){
   .first{
     height: 165px;
+  }
+
+  .github{
+    margin-right: 10px;
   }
 }
 

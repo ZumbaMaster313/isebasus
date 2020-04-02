@@ -54,16 +54,16 @@ class Home extends React.Component{
     return (
       <header className="body">
         <nav class="nav">
-          <a id="link">about</a>
+          <a id="link"> about</a>
         </nav>
         <div className="projects">
-          <h1 className="first"><a id="text">hey, i'm sebastian.</a></h1>
+          <h1 className="first"><a id="text">hi, i'm sebastian</a> 👋</h1>
           <h2 className="caption">These are the projects I've developed. Check out my <a id="git" href="https://github.com/ZumbaMaster313/">github</a> &amp; <a id="res">resume</a> for more. </h2>
           <div className="columns">
             <Project projectId="qwerty" path={this.qwerty} name="Qwerty" imagePath={qwerty}></Project>
             <Project projectId="composter" path={this.composter} name="Composter"></Project>
             <Project projectId="videoScraper" path={this.videoScraper} name="Video Scraper"></Project>
-            <Project projectId="pacman" path={this.rapter} name="Pacman"></Project>
+            <Project projectId="pong" path={this.rapter} name="Pong"></Project>
           </div>
         </div>
       </header>
@@ -80,7 +80,10 @@ export class Qwerty extends React.Component{
       caption="web proxy"
       p1="This Web Proxy was originally created for the necessity of searching up websites under my high school wifi. As a result, most websites under the school wifi are blocked so a web proxy would save the day. Until, of course, one day it would finally become a blocked website as well."
       p2="This project was created with the Flask web server. This application works by HTTP requesting a website to grab its HTML under a given search string. As a result, once the application has the HTMl it could use the css and js links to fully render the site. It does this by integrating this servers domain in front of the css and js links in the HTML so that way it could request the css and js from my server. It of course does not work for ever single website, but it still needs work to be done."
-      p3="Overall, this project was a pain at first, trying to figure out how to render the HTML and css, but it was really fun in my opinion. Check out the code on my GitHub and also check out my website! Links below."
+      p3="Overall, this project was a pain at first, trying to figure out how to render the HTML and css, but it was really fun in my opinion. Check out the code on my GitHub and also check out my website! Links above."
+      website={ <p><a class="button">Visit Live</a> </p>}
+      link="https://qwertyuiop.space"
+      gitLink="https://github.com/ZumbaMaster313/qwertyuiop/"
       >
       </Description>
     )
@@ -106,7 +109,7 @@ export class Rapter extends React.Component{
 export class Composter extends React.Component{
   render(){
     return(
-      <Description projectName="Composter"></Description>
+      <Description projectName="Compost"></Description>
     )
   }
 }
