@@ -27,6 +27,12 @@ div{
   display: block;
 }
 
+.details{
+  color:rgb(255, 255, 255, 0.8);
+  border-bottom: .1em solid #5bf390;
+  padding: .1em;
+}
+
 #wave{
   -webkit-text-fill-color: black;
 }
@@ -482,7 +488,7 @@ p{
 @media only screen and (max-width: 770px){
   .first{
     font-size: 3.6rem;
-    height: 115px;
+    height: 125px;
   }
 
   #title{
@@ -502,7 +508,7 @@ p{
 
 @media only screen and (max-width: 577px){
   .first{
-    height: 165px;
+    height: 180px;
   }
 
   .github{

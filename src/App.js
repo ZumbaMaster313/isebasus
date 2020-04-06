@@ -63,10 +63,10 @@ class Home extends React.Component{
           <h1 className="first"><a id="text">hey, i'm sebastian.</a></h1>
           <h2 className="caption">These are the projects I've developed. Check out my <a id="git" href="https://github.com/ZumbaMaster313/">github</a> &amp; <a id="res">resume</a> for more.  </h2>
           <div className="columns">
+          <Project projectId="pacman" path={this.pacman} coverId="coverPac" name="pacman "></Project>
+            <Project projectId="pong" path={this.pong} coverId="coverPong" name="pong "></Project>
             <Project projectId="qwerty" path={this.qwerty} name="qwerty  " coverId="coverQwerty"imagePath={qwerty}></Project>
             <Project projectId="videoScraper" path={this.videoScraper} coverId="coverScraper"name="video scraper  "></Project>
-            <Project projectId="pacman" path={this.pacman} coverId="coverPac" name="pacman "></Project>
-            <Project projectId="pong" path={this.pong} coverId="coverPong" name="pong "></Project>
           </div>
         </div>
       </header>
@@ -140,6 +140,13 @@ export class Pacman extends React.Component{
       video={pacVideo} 
       gitLink="https://github.com/ZumbaMaster313/PacMan"
       link="https://gamessebastian.weebly.com/"
+      p1="A simple remake of Pacman... But it was made in Unity, not straight C. I made this game to understand how the ghosts in the game worked, so I was like &quot;ok I feel like making Pacman&quot;. "
+      p2="During this process I learned 2d animation, Tile mapping, Tile map art, and scripting object oriented for-loops. It worked out pretty good, except for the fact that some parts of the game doesn't function like the original."
+      p3="If you want more details about this project, it's " 
+      details="here"
+      href="https://isebasus.wixsite.com/sebs/pac-man"
+      p3b=". Thanks for checking it out!" 
+      clas="details"
       ></Description>
     )
   }
@@ -149,10 +156,18 @@ export class Pong extends React.Component{
   render(){
     return(
       <Description 
+      link="https://gameesseb.weebly.com/"
       projectName="Pong"
       caption="unity game"
       website={ <p><a class="button">Visit Site</a> </p>}
       video={pongVideo}
+      p1="A simple Pong game made in Unity, just wanted to develop it for fun. I also was interested in how the ball deflected off of the objects. "
+      p2="In this project, I learned how to invert the velocities of objects, use triggers on collision, and learned how the enemy behaved. I was honestly suprised that the game plays the same as the original... except for the score board 👌."
+      p3="Anyways, if you want more details about this project, it's "
+      details="here"
+      href="https://isebasus.wixsite.com/sebs/pong"
+      p3b=". Thanks for checking it out!"
+      clas="details"
       >
 
       </Description>
