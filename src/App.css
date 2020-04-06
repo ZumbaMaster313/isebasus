@@ -10,7 +10,10 @@
   background: #ffb1b1; /* Gecko Browsers */
 }
 
-
+*{
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
 
 html{
   height: 100%;
@@ -31,14 +34,14 @@ div{
 .body{
   width: 100%;
   height: 100vh;
-  background-color:rgb(12, 13, 23);
+  background-color: rgb(15, 15, 16);
   font-family: 'Raleway', sans-serif;
   -webkit-font-smoothing: subpixel-antialiased;
   text-rendering: optimizeLegibility;
 }
 
 .projects{
-  max-width: 950px;
+  max-width: 995px;
   margin: 0px auto;
   padding: 40px 15px;
   background-size: cover;
@@ -58,7 +61,7 @@ div{
 .caption{
   font-size: 3rem;
   margin-bottom: 60px;
-  color: rgba(255, 255, 255);
+  color: #ffffff;
   font-weight: 400;
   opacity: 0.8;
   text-align: left;
@@ -175,16 +178,16 @@ div{
 }
 
 .linkName{
-  font-weight: 800;
+  font-weight: 500;
   color: rgb(255, 255, 255);
   display: inline-block;
   position: relative;
   transition: text-shadow .2s;
-  font-size: 2em;
-  margin-bottom: .2em;
+  font-size: 1.5em;
 }
 
 .cover{
+  background-image: rgba(0, 0, 0),url(../src/images/qwerty.png);
   background-blend-mode: screen;
   transition: opacity .2s;
   width: 100%;
@@ -220,31 +223,52 @@ div{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
-  gap: 30px 25px;
+  gap: 25px 25px;
+}
+
+.back{
+  color: inherit;
+  display: inline-block;
+  transition: color .2s;
+  padding: .25em 1.5em;
+  overflow: hidden;
+}
+
+.back::after{
+  content: '';
+  background-color: #000000;
+  opacity: 0.5;
+  display: block;
+  position: absolute;
+  width: calc(100% - 1.5em);
+  height: 100%;
+  top: 0;
+  left: 1em;
+  transform: translateX(0) skew(-7.77deg);
+  -webkit-transform-origin: right top;
+  transform-origin: right top;
+  z-index: -1;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s,-webkit-transform .2s;
 }
 
 video{
-  border-radius: 3px;
+  border-radius: 4px;
 }
 
 .project{
   position: relative;
   overflow: hidden;
-  border-radius: 3px;
+  border-radius: 4px;
+  
 }
 
 .parent{
-  border-radius: 3px;
+  border-radius: 4px;
   transition: 0.15s ease;
   background-size: cover;
   background-repeat: none;
-}
-
-.parent:hover{
-  -webkit-transform: translateY(-1.5px);
-  -ms-transform: translateY(-1.5px);
-  transform: translateY(-1.5px);
-
 }
 
 #link{
@@ -297,8 +321,8 @@ img{
   font-weight: 400;
   margin-top: 10px;
   color: rgba(255, 255, 255, 0.9);
-  position: relative;
-  border-radius: 4px;
+  position: relative
+
 }
 
 #qwerty{
@@ -308,7 +332,7 @@ img{
 #text{
   -webkit-text-fill-color: transparent;
   text-transform: lowercase;
-  background: #fafafa;
+  background: linear-gradient(to right,#ff4cff 0,#ff813d 100%);
    -webkit-background-clip: text;
    cursor: auto;
 }
@@ -331,7 +355,7 @@ a{
 
 .button{
   display: block;
-  background-image: linear-gradient( 135deg, #CE9FFC 10%, #7367F0 100%);
+  background: linear-gradient(35deg,#ff4cff 0,#ff813d 100%);
   color: rgb(255, 255, 255);
   font-weight: 600;
   font-size: 15px;

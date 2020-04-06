@@ -17,11 +17,11 @@ const projectContainer = ({projectId, name, method, xRotate, yRotate, path, imag
         <div style={{color: '-webkit-link', cursor: 'pointer'}} onClick={path}>
             <div className="parent" id={projectId}>
                 <div className="project">
-                    <div class="positioning">
-                        <span class="linkName">{name}</span>
-                    </div>
                     <div className="cover" id={coverId}></div>
                 </div>
+            </div>
+            <div className="projectName">
+                <h1 className="name">{name}</h1>
             </div>
         </div>
     
