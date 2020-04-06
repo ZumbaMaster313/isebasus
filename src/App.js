@@ -157,6 +157,7 @@ export class Pong extends React.Component{
     return(
       <Description 
       link="https://gameesseb.weebly.com/"
+      gitLink="https://github.com/ZumbaMaster313/PongGame"
       projectName="Pong"
       caption="unity game"
       website={ <p><a class="button">Visit Site</a> </p>}

@@ -57,7 +57,7 @@ const Container = ({projectName, video, p1, p2, p3, caption, gitLink, website, l
                 </div>
                 <h3 style = {styles.description} className="projectDescription">{p1}</h3>
                 <h3 style = {styles.description} className="projectDescription">{p2}</h3>
-    <h3 style = {styles.description} className="projectDescription">{p3}<a class={clas} href={href}>{details}</a>{p3b}</h3>
+                <h3 style = {styles.description} className="projectDescription">{p3}<a class={clas} href={href}>{details}</a>{p3b}</h3>
                 <h3 style = {styles.description} className="projectDescription"></h3>
                 <h3 style = {styles.description} className="projectDescription"></h3>
             </div>
