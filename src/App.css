@@ -116,17 +116,6 @@ div{
   color: rgba(255, 255, 255, 1);
 }
 
-.background-hover{
-  background: #5977f0;
-  width: 0;
-  -webkit-transition: width .2s ease-out, background .5s linear;
-  transition: width .2s ease-out, background .5s linear;
-}
-
-.background-hover:hover{
-  width: 100%;
-}
-
 #github{
   padding-right: 10px;
   border-right: 1px solid #78aede;
@@ -165,16 +154,6 @@ div{
   padding-left: 10px;
 }
 
-#devider{
-  color: #5977f0;
-  font-size: 50px;
-}
-
-#palm{
-  font-size: 25px;
-  padding-right: 15px;
-}
-
 .positioning{
   position: absolute;
   top: 50%;
@@ -202,16 +181,9 @@ div{
   background-repeat: none;
 }
 
-/*
-.cover:hover{
-  background: radial-gradient(ellipse farthest-corner at center center, rgba(0,0,0,0.1) 20%, rgba(0,0,0,0.4) 100%) repeat scroll 0% 0%;
-}*/
-
 #pacman{
   background-image: url(../src/images/pac.JPG);
 }
-
-
 
 #composter{
   background-image: url(../src/images/compost.JPG);
