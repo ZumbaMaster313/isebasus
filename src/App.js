@@ -63,10 +63,10 @@ class Home extends React.Component{
           <h1 className="first"><a id="text">hey, i'm sebastian.</a></h1>
           <h2 className="caption">These are the projects I've developed. Check out my <a id="git" href="https://github.com/ZumbaMaster313/">github</a> &amp; <a id="res" href="https://drive.google.com/file/d/1IxqVpsvz8np6-Xaz1NG8KTiRZsLrbzxF/view?usp=sharing">resume</a> for more.  </h2>
           <div className="columns">
-          <Project projectId="pacman" path={this.pacman} coverId="coverPac" name="pacman "></Project>
-            <Project projectId="pong" path={this.pong} coverId="coverPong" name="pong "></Project>
-            <Project projectId="qwerty" path={this.qwerty} name="qwerty  " coverId="coverQwerty"imagePath={qwerty}></Project>
-            <Project projectId="videoScraper" path={this.videoScraper} coverId="coverScraper"name="video scraper  "></Project>
+          <Project projectId="videoScraper" path={this.videoScraper} coverId="coverScraper"name="video scraper  "></Project>
+          <Project projectId="qwerty" path={this.qwerty} name="qwerty  " coverId="coverQwerty"imagePath={qwerty}></Project>
+          <Project projectId="pong" path={this.pong} coverId="coverPong" name="pong "></Project>
+            <Project projectId="pacman" path={this.pacman} coverId="coverPac" name="pacman "></Project>
           </div>
         </div>
       </header>
@@ -120,7 +120,7 @@ export class VideoScraper extends React.Component{
       video={scraperVideo} 
       projectName="Video Scraper"
       caption="web scraper"
-      website={ <p><a class="button">View Images</a> </p>}
+      website={ <p><a class="button" href="https://github.com/ZumbaMaster313/YoutubeWebScraper/blob/master/webscraperPic.JPG">View Images</a> </p>}
       p1="This Youtube Web-Scraper is an app that is able to search up any youtube video from Youtube's API. It was made in flask, which is a Python library used to create web applications. This was created for the revolutionary purpose of being able to search up youtube videos on this application instead on youtube.com. Very innovative."
       p2="This project was my first flask application which was pretty fun for me to learn. The webscraper works by grabbing a search string which then sends an HTTP request to Youtube's API. The API then sends data back that contains the urls of each video that corresponds with the search string. With that, the application is able to display those URls as videos in HTML."
       p3="As a result, I learned a lot about creating web applications since this was my first web application I made. There were some difficulties, like trying to find out how to work with Youtube's api and how to of course ping the api to get the information that the application needed. But overall very fun project, check out my code on my GitHub. Link below."
