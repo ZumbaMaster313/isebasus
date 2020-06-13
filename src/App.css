@@ -86,7 +86,7 @@ div{
 }
 
 #git{
-  color: #f093fb;
+  color: #FF7AF5;
   text-decoration: none;
   transition: 0.25s ease;
 }
@@ -281,12 +281,8 @@ video{
   background-image: url(../src/images/videoScraper.jpeg);
 }
 
-#foodBanks{
-  background-image: url(../src/images/food.JPG);
-}
-
 #res{
-  color: #f5576c;
+  color: #FD6585;
   text-decoration: none;
   transition: 0.25s ease;
   cursor: pointer;
@@ -303,22 +299,8 @@ img{
   font-weight: 400;
   margin-top: 10px;
   color: rgba(255, 255, 255, 0.9);
-  position: relative;
+  position: relative
 
-}
-
-.contact{
-  text-align: left;
-  display: block;
-  font-size: 22px;
-  font-weight: 500;
-  margin-top: 10px;
-  color: rgba(255, 255, 255, 0.8);
-  position: relative;
-}
-
-.contact:hover{
-  color: rgba(255, 255, 255, 1);
 }
 
 #qwerty{
@@ -328,7 +310,7 @@ img{
 #text{
   -webkit-text-fill-color: transparent;
   text-transform: lowercase;
-  background-image: linear-gradient(to right, #f093fb 0%, #f5576c 100%);
+  background: linear-gradient(to right,#ff4cff 0,#ff813d 100%);
    -webkit-background-clip: text;
    cursor: auto;
 }
