@@ -109,7 +109,7 @@ export class FoodBanks extends React.Component{
       video={FoodVideo} 
       projectName="FoodBanks"
       caption="food locater"
-      p1="This website was created to help individuals struggling from the Covid-19 pandemic find food banks near them 🥔. I then created the website because I thought it would be nice if I could help people struggling from the corona-virus pandemic."
+      p1="This website was created to help individuals struggling from the Covid-19 pandemic to find food banks near them 🥔. I also thought it would be nice if I could help people struggling from the corona-virus pandemic."
       p2="This project was created with Node.js. The application works by requesting and parsing data from Google's cloud platform API. After parsing the data, I store it into my own API, letting the website's front end access the data about local food banks."
       p3="Overall, this project was really fun and knowing that I would be able to help people made the experience even better. Not to mention, going on the news was something different. Check out the article "
       website={ <p><a class="button">Visit Site</a> </p>}
