@@ -62,7 +62,7 @@ class Home extends React.Component{
   render(){
     return (
       <header className="body">
-         <a href="https://github.com/ZumbaMaster313/"class="github" id="g" >
+         <a href="https://github.com/isebasus/"class="github" id="g" >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="40" height="40" fill="rgb(255,255,255)"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
         </a>
         <a href="mailto:isebasus@gmail.com"class="github" id="g" >
@@ -95,7 +95,7 @@ export class Qwerty extends React.Component{
       p3="Overall, this project was a pain at first, trying to figure out how to render the HTML and css, but it was really fun in my opinion. Check out the code on my GitHub and also check out my website! ❤️ Links above."
       website={ <p><a class="button">Visit Site</a> </p>}
       link="https://qwertyuiop.space"
-      gitLink="https://github.com/ZumbaMaster313/qwertyuiop/"
+      gitLink="https://github.com/isebasus/qwertyuiop/"
       >
       </Description>
     )
@@ -116,7 +116,7 @@ export class FoodBanks extends React.Component{
       details="here"
       link="https://foodbanks.space"
       href="https://www.10news.com/news/local-news/teen-creates-website-to-locate-local-food-banks"
-      gitLink="https://github.com/ZumbaMaster313/FoodBanks/"
+      gitLink="https://github.com/isebasus/FoodBanks/"
       p3b=" and don't forget to check out my GitHub! ❤️ Link above." 
       clas="details"
       >
@@ -129,7 +129,7 @@ export class VideoScraper extends React.Component{
   render(){
     return(
       <Description 
-      gitLink="https://github.com/ZumbaMaster313/YoutubeWebScraper/"
+      gitLink="https://github.com/isebasus/YoutubeWebScraper/"
       video={scraperVideo} 
       projectName="Video Scraper"
       caption="web scraper"
@@ -151,7 +151,7 @@ export class Pacman extends React.Component{
       caption="unity game"
       website={ <p><a class="button">Visit Site</a> </p>}
       video={pacVideo} 
-      gitLink="https://github.com/ZumbaMaster313/PacMan"
+      gitLink="https://github.com/isebasus/PacMan"
       link="https://gamessebastian.weebly.com/"
       p1="A simple remake of Pacman... But it was made in Unity, not straight C. I made this game to understand how the ghosts in the game worked, so I was like &quot;ok I feel like making Pacman&quot;. "
       p2="During this process I learned 2d animation, Tile mapping, Tile map art, and scripting object oriented for-loops. It worked out pretty good, except for the fact that some parts of the game doesn't function like the original."
@@ -170,7 +170,7 @@ export class Pong extends React.Component{
     return(
       <Description 
       link="https://gameesseb.weebly.com/"
-      gitLink="https://github.com/ZumbaMaster313/PongGame"
+      gitLink="https://github.com/isebasus/PongGame"
       projectName="Pong"
       caption="unity game"
       website={ <p><a class="button">Visit Site</a> </p>}
