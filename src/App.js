@@ -9,7 +9,6 @@ import Project from './components/projects.jsx';
 import Description from './components/description.jsx';
 import { createBrowserHistory } from 'history';
 import qwerty from '../src/images/qwerty.png'
-import logo from './logo.svg';
 import './App.css';
 
 var xRotate = 0;
@@ -70,7 +69,7 @@ class Home extends React.Component{
         </a>
         <div className="projects">
           <h1 className="first"><a id="text">hey, i'm sebastian.</a></h1>
-          <h2 className="caption">These are the projects I've developed. Check out my <a id="git" href="https://github.com/ZumbaMaster313/">github</a> &amp; <a id="res" href="https://drive.google.com/file/d/1IxqVpsvz8np6-Xaz1NG8KTiRZsLrbzxF/view?usp=sharing">resume</a> for more.  </h2>
+          <h2 className="caption">These are the projects I've developed. Check out my <a id="git" href="https://github.com/isebasus/">github</a> &amp; <a id="res" href="https://drive.google.com/file/d/1IxqVpsvz8np6-Xaz1NG8KTiRZsLrbzxF/view?usp=sharing">resume</a> for more.  </h2>
           <div className="columns">
           <Project projectId="foodBanks" path={this.foodBanks} coverId="coverScraper"name="food banks"></Project>
           <Project projectId="videoScraper" path={this.videoScraper} coverId="coverScraper"name="video scraper  "></Project>

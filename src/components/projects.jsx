@@ -1,15 +1,4 @@
-import React, { Component, forwardRef, useRef, useImperativeHandle  } from 'react';
-import injectSheet from 'react-jss';
-import withStyles from "react-jss";
-import PropTypes from "prop-types";
-
-
-const styles = {
-   
-
-
-};
-
+import React from 'react';
 
 const projectContainer = ({projectId, name, method, xRotate, yRotate, path, imagePath, coverId, project}) =>  {
 
@@ -28,6 +17,6 @@ const projectContainer = ({projectId, name, method, xRotate, yRotate, path, imag
     )
 };
 
-const Project = injectSheet(styles)(projectContainer);
+const Project = projectContainer;
 
 export default Project;
