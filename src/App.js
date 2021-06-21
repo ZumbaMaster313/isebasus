@@ -89,7 +89,7 @@ export class Qwerty extends React.Component{
       video={qwertyVideo} 
       projectName="Qwerty"
       caption="web proxy"
-      p1="This Web Proxy was originally created for the necessity of searching up websites under my high school wifi. As a result, most websites under the school wifi are blocked so a web proxy would save the day. Until, of course, one day it would finally become a blocked website as well 👌."
+      p1="This Web Proxy was originally created for the necessity of searching up websites under my high school wifi. As a result, most websites under the school wifi are blocked so a web proxy would save the day. Until, of course, one day it would finally become a blocked website as well."
       p2="This project was created with the Flask web server. This application works by HTTP requesting a website to grab its HTML under a given search string. As a result, once the application has the HTMl it could use the css and js links to fully render the site. It does this by integrating this servers domain in front of the css and js links in the HTML so that way it could request the css and js from my server. It of course does not work for every single website, but it still needs work to be done."
       p3="Overall, this project was a pain at first, trying to figure out how to render the HTML and css, but it was really fun in my opinion. Check out the code on my GitHub and also check out my website! ❤️ Links above."
       website={ <p><a class="button">Visit Site</a> </p>}
@@ -108,7 +108,7 @@ export class FoodBanks extends React.Component{
       video={FoodVideo} 
       projectName="FoodBanks"
       caption="food locater"
-      p1="This website was created to help individuals struggling from the Covid-19 pandemic to find food banks near them 🥔. I also thought it would be nice if I could help people struggling from the corona-virus pandemic."
+      p1="This website was created to help individuals struggling from the Covid-19 pandemic to find food banks near them. I also thought it would be nice if I could help people struggling from the corona-virus pandemic."
       p2="This project was created with Node.js. The application works by requesting and parsing data from Google's cloud platform API. After parsing the data, I store it into my own API, letting the website's front end access the data about local food banks."
       p3="Overall, this project was really fun and knowing that I would be able to help people made the experience even better. Not to mention, going on the news was something different. Check out the article "
       website={ <p><a class="button">Visit Site</a> </p>}
@@ -133,7 +133,7 @@ export class VideoScraper extends React.Component{
       projectName="Video Scraper"
       caption="web scraper"
       website={ <p><a class="button" href="https://github.com/ZumbaMaster313/YoutubeWebScraper/blob/master/webscraperPic.JPG">View Images</a> </p>}
-      p1="This Youtube Web-Scraper is an app that is able to search up any youtube video from Youtube's API. It was made in flask, which is a Python library used to create web applications. This was created for the revolutionary purpose of being able to search up youtube videos on this application instead on youtube.com ✌️. Very innovative..."
+      p1="This Youtube Web-Scraper is an app that is able to search up any youtube video from Youtube's API. It was made in flask, which is a Python library used to create web applications. This was created for the revolutionary purpose of being able to search up youtube videos on this application instead on youtube.com. Very innovative..."
       p2="This project was my first flask application which was pretty fun for me to learn. The webscraper works by grabbing a search string which then sends an HTTP request to Youtube's API. The API then sends data back that contains the urls of each video that corresponds with the search string. With that, the application is able to display those URls as videos in HTML."
       p3="As a result, I learned a lot about creating web applications since this was my first web application I made. There were some difficulties, like trying to find out how to work with Youtube's api and how to of course ping the api to get the information that the application needed. But overall very fun project, check out my code on my GitHub 💖. Link above!"
       >
