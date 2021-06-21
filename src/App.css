@@ -197,6 +197,15 @@ div{
   background-image: url(../src/images/pongg.JPG);
 }
 
+#archive{
+  background-image: url(../src/images/archive.png);
+}
+
+#hamming{
+  background-image: url(../src/images/hamming.png);
+}
+
+
 .columns{
   display: grid;
   grid-template-columns: repeat(2, 1fr);

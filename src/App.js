@@ -21,6 +21,8 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home}/>
           <Route path={"/qwerty"} component={Qwerty}></Route>
+          <Route path={"/archive"} component={Archive}></Route>
+          <Route path={"/hamming"} component={Hamming}></Route>
           <Route path={"/videoscraper"} component={VideoScraper}></Route>
           <Route path={"/pacman"} component={Pacman}></Route>
           <Route path={"/pong"} component={Pong}></Route>
@@ -49,11 +51,18 @@ class Home extends React.Component{
     this.props.history.push('/pacman')
   }
 
+  archive = () => {
+    this.props.history.push('/archive')
+  }
+
   pong = () => {
     this.props.history.push('/pong')
   }
 
-  
+  hamming = () => {
+    this.props.history.push('/hamming')
+  }
+
   foodBanks = () => {
     this.props.history.push('/foodbanks')
   }
@@ -71,15 +80,55 @@ class Home extends React.Component{
           <h1 className="first"><a id="text">hey, i'm sebastian.</a></h1>
           <h2 className="caption">These are the projects I've developed. Check out my <a id="git" href="https://github.com/isebasus/">github</a> &amp; <a id="res" href="https://drive.google.com/file/d/1IxqVpsvz8np6-Xaz1NG8KTiRZsLrbzxF/view?usp=sharing">resume</a> for more.  </h2>
           <div className="columns">
-          <Project projectId="foodBanks" path={this.foodBanks} coverId="coverScraper"name="food banks"></Project>
-          <Project projectId="videoScraper" path={this.videoScraper} coverId="coverScraper"name="video scraper  "></Project>
+          <Project projectId="foodBanks" path={this.foodBanks} coverId="coverScraper" name="food banks"></Project>
+          <Project projectId="archive" path={this.archive} coverId="coverScraper" name="archive"></Project>
+          <Project projectId="videoScraper" path={this.videoScraper} coverId="coverScraper"name="video scraper"></Project>
           <Project projectId="qwerty" path={this.qwerty} name="qwerty  " coverId="coverQwerty"imagePath={qwerty}></Project>
-          <Project projectId="pong" path={this.pong} coverId="coverPong" name="pong "></Project>
+          <Project projectId="hamming" path={this.archive} coverId="coverScraper" name="hamming"></Project>
+          <Project projectId="pong" path={this.pong} coverId="coverPong" name="pong"></Project>
           </div>
         </div>
       </header>
     );
     }
+}
+
+export class Archive extends React.Component{
+  render(){
+    return(
+      <Description 
+      video={qwertyVideo} 
+      projectName="Archive"
+      caption="Huffman Compression"
+      p1="This Web Proxy was originally created for the necessity of searching up websites under my high school wifi. As a result, most websites under the school wifi are blocked so a web proxy would save the day. Until, of course, one day it would finally become a blocked website as well."
+      p2="This project was created with the Flask web server. This application works by HTTP requesting a website to grab its HTML under a given search string. As a result, once the application has the HTMl it could use the css and js links to fully render the site. It does this by integrating this servers domain in front of the css and js links in the HTML so that way it could request the css and js from my server. It of course does not work for every single website, but it still needs work to be done."
+      p3="Overall, this project was a pain at first, trying to figure out how to render the HTML and css, but it was really fun in my opinion. Check out the code on my GitHub and also check out my website! ❤️ Links above."
+      website={ <p><a class="button">View Design</a> </p>}
+      link="https://docs.google.com/document/d/1TV7tv_EihiZ0EpDRFjV8yQ-Bk1MdsqCt-646f9M02Vk/edit?usp=sharing"
+      gitLink="https://github.com/isebasus/archive/"
+      >
+      </Description>
+    )
+  }
+}
+
+export class Hamming extends React.Component{
+  render(){
+    return(
+      <Description 
+      video={qwertyVideo} 
+      projectName="Hamming"
+      caption="Hamming Encoding"
+      p1="This Web Proxy was originally created for the necessity of searching up websites under my high school wifi. As a result, most websites under the school wifi are blocked so a web proxy would save the day. Until, of course, one day it would finally become a blocked website as well."
+      p2="This project was created with the Flask web server. This application works by HTTP requesting a website to grab its HTML under a given search string. As a result, once the application has the HTMl it could use the css and js links to fully render the site. It does this by integrating this servers domain in front of the css and js links in the HTML so that way it could request the css and js from my server. It of course does not work for every single website, but it still needs work to be done."
+      p3="Overall, this project was a pain at first, trying to figure out how to render the HTML and css, but it was really fun in my opinion. Check out the code on my GitHub and also check out my website! ❤️ Links above."
+      website={ <p><a class="button">View Design</a> </p>}
+      link="https://docs.google.com/document/d/1TV7tv_EihiZ0EpDRFjV8yQ-Bk1MdsqCt-646f9M02Vk/edit?usp=sharing"
+      gitLink="https://github.com/isebasus/hamming/"
+      >
+      </Description>
+    )
+  }
 }
 
 export class Qwerty extends React.Component{
