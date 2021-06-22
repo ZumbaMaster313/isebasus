@@ -36,7 +36,7 @@ const styles = {
 };
 
 
-const Container = ({projectName, video, p1, p2, p3, caption, gitLink, website, link, details, p3b, clas, href}) =>  {
+const Container = ({projectName, video, p1, p2, p3, caption, gitLink, website, link, details, p2b, p3b, clas, href}) =>  {
 
     return(
         <div class="body">
@@ -57,6 +57,7 @@ const Container = ({projectName, video, p1, p2, p3, caption, gitLink, website, l
                 </div>
                 <h3 style = {styles.description} className="projectDescription">{p1}</h3>
                 <h3 style = {styles.description} className="projectDescription">{p2}</h3>
+                <h3 style = {styles.description} className="projectDescription">{p2b}</h3>
                 <h3 style = {styles.description} className="projectDescription">{p3}<a class={clas} href={href}>{details}</a>{p3b}</h3>
                 <h3 style = {styles.description} className="projectDescription"></h3>
                 <h3 style = {styles.description} className="projectDescription"></h3>

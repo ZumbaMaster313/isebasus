@@ -1,15 +1,16 @@
-import React, { forwardRef, useRef, useImperativeHandle, Component} from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
 import qwertyVideo from '../src/videos/qwertyVideo.mp4';
 import FoodVideo from '../src/videos/foodBanks.mkv';
 import pongVideo from '../src/videos/pongVideo.mp4';
-import scraperVideo from '../src/videos/scraperVideo.mp4'
+import scraperVideo from '../src/videos/scraperVideo.mp4';
+import archiveVideo from '../src/videos/archive.mp4';
 import pacVideo from '../src/videos/pacman.mp4';
 import Project from './components/projects.jsx';
 import Description from './components/description.jsx';
 import { createBrowserHistory } from 'history';
 import qwerty from '../src/images/qwerty.png'
-import './App.css';
+import './styles/App.css';
 
 var xRotate = 0;
 var yRotate = 0;
@@ -84,8 +85,6 @@ class Home extends React.Component{
           <Project projectId="archive" path={this.archive} coverId="coverScraper" name="archive"></Project>
           <Project projectId="videoScraper" path={this.videoScraper} coverId="coverScraper"name="video scraper"></Project>
           <Project projectId="qwerty" path={this.qwerty} name="qwerty  " coverId="coverQwerty"imagePath={qwerty}></Project>
-          <Project projectId="hamming" path={this.archive} coverId="coverScraper" name="hamming"></Project>
-          <Project projectId="pong" path={this.pong} coverId="coverPong" name="pong"></Project>
           </div>
         </div>
       </header>
@@ -97,15 +96,20 @@ export class Archive extends React.Component{
   render(){
     return(
       <Description 
-      video={qwertyVideo} 
+      video={archiveVideo}
       projectName="Archive"
       caption="Huffman Compression"
-      p1="This Web Proxy was originally created for the necessity of searching up websites under my high school wifi. As a result, most websites under the school wifi are blocked so a web proxy would save the day. Until, of course, one day it would finally become a blocked website as well."
-      p2="This project was created with the Flask web server. This application works by HTTP requesting a website to grab its HTML under a given search string. As a result, once the application has the HTMl it could use the css and js links to fully render the site. It does this by integrating this servers domain in front of the css and js links in the HTML so that way it could request the css and js from my server. It of course does not work for every single website, but it still needs work to be done."
-      p3="Overall, this project was a pain at first, trying to figure out how to render the HTML and css, but it was really fun in my opinion. Check out the code on my GitHub and also check out my website! ❤️ Links above."
-      website={ <p><a class="button">View Design</a> </p>}
+      p1="This Huffman Coding implementation was created for a school project. The project builds two programs (the encoder and the decoder), the binaries can only be ran in linux but atleast we have another linux capatible compression algorithm."
+      p2="This project was created in raw C. The encoder works by first computing a histogram of all bytes (characters) within a file, then it traverses through the freqency of each character to emit a code table. Further, the encoder will then emit the Huffman tree into the encoded file, then emit each code that corresponds with each character in the original file."
+      p2b="The decoder works by reading in the dumped tree from the encoded file and reconstructs the Huffman tree. With this reconstructed tree, the decoder can read the rest of the file bit by bit to traverse down the Huffman tree one link at a time. Reading a 0 means to walk left, and reading a 1 means to walk right of the Huffman tree."
+      p3="Overall, this project was really fun and coding the assignment up in two weeks kept the adrenaline pumping. Check out the code on my GitHub and also check out my "
+      details="design"
+      href="https://docs.google.com/document/d/1TV7tv_EihiZ0EpDRFjV8yQ-Bk1MdsqCt-646f9M02Vk/edit?usp=sharing"
+      p3b=" document! ❤️ Links above."
+      website={ <p><a class="button">📦 View Design</a> </p>}
       link="https://docs.google.com/document/d/1TV7tv_EihiZ0EpDRFjV8yQ-Bk1MdsqCt-646f9M02Vk/edit?usp=sharing"
       gitLink="https://github.com/isebasus/archive/"
+      clas="details"
       >
       </Description>
     )
@@ -141,7 +145,7 @@ export class Qwerty extends React.Component{
       p1="This Web Proxy was originally created for the necessity of searching up websites under my high school wifi. As a result, most websites under the school wifi are blocked so a web proxy would save the day. Until, of course, one day it would finally become a blocked website as well."
       p2="This project was created with the Flask web server. This application works by HTTP requesting a website to grab its HTML under a given search string. As a result, once the application has the HTMl it could use the css and js links to fully render the site. It does this by integrating this servers domain in front of the css and js links in the HTML so that way it could request the css and js from my server. It of course does not work for every single website, but it still needs work to be done."
       p3="Overall, this project was a pain at first, trying to figure out how to render the HTML and css, but it was really fun in my opinion. Check out the code on my GitHub and also check out my website! ❤️ Links above."
-      website={ <p><a class="button">Visit Site</a> </p>}
+      website={ <p><a class="button">📦 Visit Site</a> </p>}
       link="https://qwertyuiop.space"
       gitLink="https://github.com/isebasus/qwertyuiop/"
       >
@@ -160,7 +164,7 @@ export class FoodBanks extends React.Component{
       p1="This website was created to help individuals struggling from the Covid-19 pandemic to find food banks near them. I also thought it would be nice if I could help people struggling from the corona-virus pandemic."
       p2="This project was created with Node.js. The application works by requesting and parsing data from Google's cloud platform API. After parsing the data, I store it into my own API, letting the website's front end access the data about local food banks."
       p3="Overall, this project was really fun and knowing that I would be able to help people made the experience even better. Not to mention, going on the news was something different. Check out the article "
-      website={ <p><a class="button">Visit Site</a> </p>}
+      website={ <p><a class="button">📦 Visit Site</a> </p>}
       details="here"
       link="https://foodbanks.space"
       href="https://www.10news.com/news/local-news/teen-creates-website-to-locate-local-food-banks"
@@ -181,7 +185,7 @@ export class VideoScraper extends React.Component{
       video={scraperVideo} 
       projectName="Video Scraper"
       caption="web scraper"
-      website={ <p><a class="button" href="https://github.com/ZumbaMaster313/YoutubeWebScraper/blob/master/webscraperPic.JPG">View Images</a> </p>}
+      website={ <p><a class="button" href="https://github.com/ZumbaMaster313/YoutubeWebScraper/blob/master/webscraperPic.JPG">📦 View Images</a> </p>}
       p1="This Youtube Web-Scraper is an app that is able to search up any youtube video from Youtube's API. It was made in flask, which is a Python library used to create web applications. This was created for the revolutionary purpose of being able to search up youtube videos on this application instead on youtube.com. Very innovative..."
       p2="This project was my first flask application which was pretty fun for me to learn. The webscraper works by grabbing a search string which then sends an HTTP request to Youtube's API. The API then sends data back that contains the urls of each video that corresponds with the search string. With that, the application is able to display those URls as videos in HTML."
       p3="As a result, I learned a lot about creating web applications since this was my first web application I made. There were some difficulties, like trying to find out how to work with Youtube's api and how to of course ping the api to get the information that the application needed. But overall very fun project, check out my code on my GitHub 💖. Link above!"
