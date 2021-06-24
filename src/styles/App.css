@@ -37,6 +37,14 @@ div{
   -webkit-text-fill-color: black;
 }
 
+h2{
+  display: block;
+  margin-block-start: 0.0em;
+  margin-block-end: 0.0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
 .body{
   width: 100%;
   height: 100vh;
@@ -72,7 +80,6 @@ div{
   opacity: 0.8;
   text-align: left;
   font-weight: 400;
-  margin-top: -100px;  
 }
 
 .caption2{
@@ -423,10 +430,9 @@ p{
   line-height: 1;
   text-align: left;
   font-size: 6.4rem;
-  height: 150px;
   -webkit-background-clip: text;
   margin-block-start: 0.67em;
-  margin-block-end: 0.67em;
+  margin-block-end: 0.20em;
   margin-inline-start: 0px;
   width: 100%;
   margin-inline-end: 0px;
@@ -479,26 +485,24 @@ p{
   color: #61dafb;
 }
 
-@media only screen and (max-width: 995px){
-  .first{
-    height: 230px;
-  }
-
-}
-
 @media only screen and (max-width: 770px){
   .first{
     font-size: 3.6rem;
-    height: 125px;
+  }
+
+  #text {
+    overflow: hidden;
+    display: block;
+    margin-top: 10px;
   }
 
   #title{
     font-size: 3rem;
-    height: 135px;
   }
 
   .caption{
     font-size: 1.8rem;
+    margin-bottom: 50px;
   }
 
   .columns{
@@ -509,23 +513,20 @@ p{
 
 @media only screen and (max-width: 714px){
   .first{
-    height: 185px;
+    overflow: hidden;
+    display: block;
   }
+
+  #text {
+    overflow: hidden;
+    display: block;
+  }
+  
 }
 
 @media only screen and (max-width: 577px){
-  .first{
-    height: 180px;
-  }
-
   .github{
     margin-right: 10px;
-  }
-}
-
-@media only screen and (max-width: 411px){
-  .first{
-    height: 240px;
   }
 }
 
