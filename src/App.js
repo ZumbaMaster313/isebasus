@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
 import qwertyVideo from '../src/videos/qwertyVideo.mp4';
-import FoodVideo from '../src/videos/foodBanks.mkv';
+import FoodVideo from '../src/videos/foodBanks.mp4';
 import pongVideo from '../src/videos/pongVideo.mp4';
 import scraperVideo from '../src/videos/scraperVideo.mp4';
 import archiveVideo from '../src/videos/archive.mp4';
