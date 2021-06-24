@@ -432,7 +432,7 @@ p{
   font-size: 6.4rem;
   -webkit-background-clip: text;
   margin-block-start: 0.67em;
-  margin-block-end: 0.20em;
+  margin-block-end: 0.17em;
   margin-inline-start: 0px;
   width: 100%;
   margin-inline-end: 0px;
@@ -498,7 +498,14 @@ p{
 
   #title{
     font-size: 3rem;
+    margin-bottom: -100px;
   }
+
+  #pCaption {
+    margin-bottom: 55px; 
+  }
+
+  
 
   .caption{
     font-size: 1.8rem;

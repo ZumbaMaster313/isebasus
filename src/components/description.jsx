@@ -53,7 +53,7 @@ const Container = ({projectName, video, p1, p2, p3, caption, gitLink, website, l
                     {website}
                 </a>
                 <div>
-                    <video src={video} width="100%" height="auto" preload="auto" muted="true" title="Qwerty" autoplay="true" loop="true"></video>
+                    <video src={video} width="100%" height="auto" autoPlay loop muted playsInline></video>
                 </div>
                 <h3 style = {styles.description} className="projectDescription">{p1}</h3>
                 <h3 style = {styles.description} className="projectDescription">{p2}</h3>
