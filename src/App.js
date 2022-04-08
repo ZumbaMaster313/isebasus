@@ -79,7 +79,7 @@ class Home extends React.Component{
         </a>
         <div className="projects">
           <h1 className="first"><a id="text">hey, i'm sebastian.</a></h1>
-          <h2 className="caption">These are the projects I've developed. Check out my <a id="git" href="https://github.com/isebasus/">github</a> &amp; <a id="res" href="https://drive.google.com/file/d/1IxqVpsvz8np6-Xaz1NG8KTiRZsLrbzxF/view?usp=sharing">resume</a> for more.  </h2>
+          <h2 className="caption">These are the projects I've developed. Check out my <a id="git" href="https://github.com/isebasus/">github</a> &amp; <a id="res" href="https://drive.google.com/file/d/1fWEwuKicnZNB-ofp31HVw08vOnmmI1o4/view">resume</a> for more.  </h2>
           <div className="columns">
           <Project projectId="foodBanks" path={this.foodBanks} coverId="coverScraper" name="food banks"></Project>
           <Project projectId="archive" path={this.archive} coverId="coverScraper" name="archive"></Project>
